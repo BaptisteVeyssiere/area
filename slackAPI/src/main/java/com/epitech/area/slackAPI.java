@@ -1,7 +1,11 @@
 package com.epitech.area;
 
 import allbegray.slack.SlackClientFactory;
+import allbegray.slack.type.Channel;
+import allbegray.slack.type.History;
 import allbegray.slack.webapi.SlackWebApiClient;
+
+import java.util.List;
 
 public class slackAPI {
 
@@ -16,8 +20,10 @@ public class slackAPI {
         apiClient.createChannel(channel);
     }
 
+    //Need "channels:write" permission
     public void sendMessage(String channel, String message)
     {
         apiClient.postMessage(channel, message);
     }
+
 }

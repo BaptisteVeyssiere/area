@@ -14,6 +14,6 @@ public class App
     {
         //System.out.println( "Hello! World!" );
         slackAPI api = new slackAPI(token);
-        api.sendMessage("général", "next");
+        //api.sendMessage("C7PBLHW56", "next");
     }
 }
