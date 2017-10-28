@@ -5,13 +5,43 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>Test</servlet-name>
+        <servlet-name>index</servlet-name>
         <servlet-class>eu.epitech.area.AreaServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>eu.epitech.area.HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>factory</servlet-name>
+        <servlet-class>eu.epitech.area.FactoryServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>modules</servlet-name>
+        <servlet-class>eu.epitech.area.ModuleServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>Test</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>index</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>factory</servlet-name>
+        <url-pattern>/factory</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>modules</servlet-name>
+        <url-pattern>/modules</url-pattern>
     </servlet-mapping>
 
     <jsp-config>
@@ -20,5 +50,11 @@
             <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
         </jsp-property-group>
     </jsp-config>
+
+    <listener>
+        <listener-class>
+            eu.epitech.area.Listener
+        </listener-class>
+    </listener>
 
 </web-app>

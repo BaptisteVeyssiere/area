@@ -1,0 +1,47 @@
+.maintitle {
+    color: whitesmoke;
+    font-size: 100px;
+    background-color: #333;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    margin: 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.abcRioButton.abcRioButtonLightBlue {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0px;
+    background-color: lightgrey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: -1px 3px 5px grey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: dodgerblue;
+}

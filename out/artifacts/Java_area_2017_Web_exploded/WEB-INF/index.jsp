@@ -15,24 +15,25 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id"
-          content="525303514988-jv1jcq53c6avli5jeg8ig7katqug3u0d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="525303514988-jv1jcq53c6avli5jeg8ig7katqug3u0d.apps.googleusercontent.com">
+    <link type="text/css" rel="stylesheet" href="<c:url value="../css/homepage.css"/>" />
 
-    <title>Servlet OAuth example</title>
+    <title>Area</title>
 </head>
 <body>
-<h2>Servlet OAuth example</h2>
+<c:import url="header.jsp" />
 <br>
+<h3>Veuillez vous connecter avec votre compte Google pour acceder à nos service :</h3>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 <script>
     //google callback. This function will redirect to our login servlet
     function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId());
+        /*console.log('ID: ' + profile.getId());
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail());
+        console.log('Email: ' + profile.getEmail());*/
         console.log('id_token: ' + googleUser.getAuthResponse().id_token);
 
         //do not post all above info to the server because that is not secure.
