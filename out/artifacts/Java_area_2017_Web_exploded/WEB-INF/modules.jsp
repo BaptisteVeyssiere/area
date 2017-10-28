@@ -1,4 +1,9 @@
-<%--
+<%@ page import="eu.epitech.area.IModule" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.LinkedList" %>
+<%@ page import="eu.epitech.area.Core" %>
+<%@ page import="eu.epitech.area.ITrigger" %>
+<%@ page import="eu.epitech.area.IReaction" %><%--
   Created by IntelliJ IDEA.
   User: veyssi_b
   Date: 27/10/17
