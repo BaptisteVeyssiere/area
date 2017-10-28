@@ -25,20 +25,6 @@ public class Listener implements ServletContextListener {
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        Core    core = (Core)servletContextEvent.getServletContext().getAttribute("core");
-        List<IModule>   modules = core.getModules();
-
-        modules.forEach(module->{
-                System.out.println(module.getName());
-                System.out.println("Triggers :");
-                module.getTriggers().forEach(trigger->{
-                    System.out.println(trigger.getName());
-                });
-                System.out.println("Reactions :");
-                module.getReactions().forEach(reaction->{
-                    System.out.println(reaction.getName());
-                });
-        });
         servletContextEvent.getServletContext().setAttribute("running", false);
         try {
             Thread.sleep(2000);

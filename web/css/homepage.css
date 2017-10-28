@@ -21,7 +21,7 @@ body {
     background-color: lightgrey;
 }
 
-ul {
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,11 +30,11 @@ ul {
     box-shadow: -1px 3px 5px grey;
 }
 
-li {
+li.menu {
     float: left;
 }
 
-li a {
+li.menu a {
     display: block;
     color: white;
     text-align: center;
@@ -42,6 +42,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li.menu a:hover {
     background-color: dodgerblue;
 }
