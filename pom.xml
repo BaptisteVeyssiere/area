@@ -22,6 +22,13 @@
   <name>area</name>
   <url>http://maven.apache.org</url>
 
+  <repositories>
+    <repository>
+      <id>twitter-repo</id>
+      <url>file://${basedir}/twitter4j/twitter4j-core</url>
+    </repository>
+  </repositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -53,6 +60,11 @@
       <groupId>com.google.api-client</groupId>
       <artifactId>google-api-client</artifactId>
       <version>1.23.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-core</artifactId>
+      <version>[4.0,)</version>
     </dependency>
   </dependencies>
 </project>

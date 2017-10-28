@@ -1,0 +1,16 @@
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/IModule.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/SlackModule.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/TwitterModule.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/Core.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/Listener.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/IReaction.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/IdTokenVerifierAndParser.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/SendSlackMessage.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/FactoryServlet.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/ITrigger.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/AreaServlet.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/GetUserTweets.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/LoginServlet.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/ModuleServlet.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/Client.java
+/home/scutar_n/rendu/tek3/java/Java_area_2017/src/main/java/eu/epitech/area/HomeServlet.java
