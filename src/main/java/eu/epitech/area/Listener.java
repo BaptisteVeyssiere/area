@@ -2,24 +2,21 @@ package eu.epitech.area;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.util.List;
 
 public class Listener implements ServletContextListener {
 
-    @Override
     public void contextInitialized(final ServletContextEvent servletContextEvent) {
-        System.out.println("Starting up!");
+        servletContextEvent.getServletContext().setAttribute("core", new Core(servletContextEvent));
         servletContextEvent.getServletContext().setAttribute("running", true);
         Thread thread = new Thread("Backloop Thread") {
             public void run() {
-                ServletContextEvent tmp = servletContextEvent;
                 while ((Boolean)servletContextEvent.getServletContext().getAttribute("running")) {
-                    System.out.println("run by: " + getName());
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         System.out.println("InterruptedException");
                     }
-                    tmp.getServletContext().setAttribute("end", "The end of times");
                 }
                 System.out.println("Fin du Thread");
             }
@@ -27,9 +24,21 @@ public class Listener implements ServletContextListener {
         thread.start();
     }
 
-    @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println(servletContextEvent.getServletContext().getAttribute("end"));
+        Core    core = (Core)servletContextEvent.getServletContext().getAttribute("core");
+        List<IModule>   modules = core.getModules();
+
+        modules.forEach(module->{
+                System.out.println(module.getName());
+                System.out.println("Triggers :");
+                module.getTriggers().forEach(trigger->{
+                    System.out.println(trigger.getName());
+                });
+                System.out.println("Reactions :");
+                module.getReactions().forEach(reaction->{
+                    System.out.println(reaction.getName());
+                });
+        });
         servletContextEvent.getServletContext().setAttribute("running", false);
         try {
             Thread.sleep(2000);
