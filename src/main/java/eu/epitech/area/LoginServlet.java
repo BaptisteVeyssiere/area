@@ -26,6 +26,9 @@ public class LoginServlet extends HttpServlet {
             String email = payLoad.getEmail();
             System.out.println("User name: " + name);
             System.out.println("User email: " + email);
+            XmlEncodeToFile xml = new XmlEncodeToFile();
+            xml.EncodeUserBean("azerty");
+            System.out.println("wrote : " + idToken + " in xml file");
 
             HttpSession session = req.getSession(true);
             session.setAttribute("userName", name);
