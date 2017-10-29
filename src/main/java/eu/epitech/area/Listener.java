@@ -38,7 +38,8 @@ public class Listener implements ServletContextListener {
                                         for (IReaction reaction : client.getModuleByName(link[2]).getReactions()) {
                                             if (reaction.getName().equals(link[3])) {
                                                 System.out.println("Reaction execution");
-                                                //reaction.execute();
+                                                System.out.println(trigger.getMessage().get(0));
+                                                reaction.execute(trigger.getMessage());
                                             }
                                         }
                                     }

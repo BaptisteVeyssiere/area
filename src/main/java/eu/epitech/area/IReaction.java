@@ -1,5 +1,7 @@
 package eu.epitech.area;
 
+import java.util.List;
+
 public abstract class IReaction {
     private String  name;
 
@@ -11,5 +13,8 @@ public abstract class IReaction {
         this.name = name;
     }
 
-    public abstract void  execute();
+    public abstract void  execute(List<String> params);
+
+    public abstract void setAccess(Object o);
+
 }

@@ -28,7 +28,15 @@ public class SlackModule extends IModule {
             OAuthAccessToken accessToken = apiClient.accessOAuth("261529746561.261980120307", "eb646b7647821fe9d5dd874568bd9116", val, "http://localhost:8080/modules");
             apiClient = SlackClientFactory.createWebApiClient(accessToken.getAccess_token());
         }
-        catch (Exception ex)
+        catch (NoSuchFieldError ex)
+        {
+            System.err.println(ex.getMessage());
+        }
+        try {
+            for (IReaction react : getReactions()) {
+                react.setAccess(apiClient);
+            }
+        } catch (Exception ex)
         {
             System.err.println(ex.getMessage());
         }
