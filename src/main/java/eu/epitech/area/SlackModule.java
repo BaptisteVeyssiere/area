@@ -15,6 +15,6 @@ public class SlackModule extends IModule {
     }
 
     public String   getLink() {
-        return ("");
+        return ("https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=261529746561.261980120307&redirect_uri=http://localhost:8080/modules");
     }
 }
