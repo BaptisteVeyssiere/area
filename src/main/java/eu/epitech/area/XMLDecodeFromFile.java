@@ -8,16 +8,17 @@ import java.io.ObjectInputStream;
 
 
 public class XMLDecodeFromFile {
-    public void DecodeUserBean(UserBean ub) throws Exception
+    public UsersBean DecodeUsersBean(UsersBean users) throws Exception
     {
         // ouverture d'un flux sur un fichier
         XMLDecoder decoder=null;
         try {
-            decoder=new XMLDecoder(new BufferedInputStream(new FileInputStream("userBean.xml")));
+            decoder=new XMLDecoder(new BufferedInputStream(new FileInputStream("usersBean.xml")));
         } catch (FileNotFoundException e) {
-            System.out.println("ERROR: File userBean.xml not found");
+            System.out.println("ERROR: File usersBean.xml not found");
         }
-       ub = (UserBean) decoder.readObject();
+        users = (UsersBean) decoder.readObject();
+        System.out.println("Class decoded");
+        return (users);
     }
-
 }
