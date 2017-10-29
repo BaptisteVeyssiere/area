@@ -1,9 +1,15 @@
 package eu.epitech.area;
 
+import allbegray.slack.SlackClientFactory;
+import allbegray.slack.webapi.SlackWebApiClient;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class SlackModule extends IModule {
+
+    private SlackWebApiClient apiClient;
+
     public  SlackModule() {
         List<ITrigger>   triggers = new LinkedList<ITrigger>();
         List<IReaction>  reactions = new LinkedList<IReaction>();
@@ -12,6 +18,16 @@ public class SlackModule extends IModule {
         reactions.add(new SendSlackMessage());
         setReactions(reactions);
         setTriggers(triggers);
+    }
+
+    public void setToken(String val)
+    {
+
+    }
+
+    public String   getParameter()
+    {
+        return (getName() + "/code");
     }
 
     public String   getLink() {
