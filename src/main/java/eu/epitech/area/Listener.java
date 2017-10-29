@@ -25,13 +25,22 @@ public class Listener implements ServletContextListener {
 
                 while ((Boolean)servletContextEvent.getServletContext().getAttribute("running")) {
                     for (Client client : ((Core)servletContextEvent.getServletContext().getAttribute("core")).getClients()) {
+                        for (IModule module : client.getModules()) {
+                            for (ITrigger trigger : module.getTriggers()) {
+                                trigger.isTriggered();
+                            }
+                        }
                         for (String[] link : client.getLinks()) {
                             for (ITrigger trigger : client.getModuleByName(link[0]).getTriggers()) {
                                 if (trigger.getName().equals(link[1])) {
-                                    trigger.isTriggered();
-                                    System.out.println("Trigger");
-                                    for (IReaction reaction : client.getModuleByName(link[2]).getReactions()) {
-                                        System.out.println("Reaction execution");
+                                    if (trigger.getStatus()) {
+                                        System.out.println("Trigger");
+                                        for (IReaction reaction : client.getModuleByName(link[2]).getReactions()) {
+                                            if (reaction.getName().equals(link[3])) {
+                                                System.out.println("Reaction execution");
+                                                //reaction.execute();
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -58,6 +67,7 @@ public class Listener implements ServletContextListener {
             XmlEncodeToFile encoder = new XmlEncodeToFile();
             UsersBean users = new UsersBean();
             users.setUsers(clients);
+            System.out.println(clients.get(0).getUsername());
             encoder.EncodeUsersBean(users);
         } catch (InterruptedException e) {
             System.out.println("InterruptedException");
