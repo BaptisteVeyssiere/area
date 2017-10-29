@@ -53,13 +53,11 @@ public class Listener implements ServletContextListener {
         servletContextEvent.getServletContext().setAttribute("running", false);
         Core    core = (Core) servletContextEvent.getServletContext().getAttribute("core");
         LinkedList<Client> clients = (LinkedList<Client>) core.getClients();
-        System.out.println(clients.get(0).getUsername());
         try {
             Thread.sleep(2000);
             XmlEncodeToFile encoder = new XmlEncodeToFile();
             UsersBean users = new UsersBean();
             users.setUsers(clients);
-            System.out.println("après la set :  " + users.getUsers().get(0).getUsername());
             encoder.EncodeUsersBean(users);
         } catch (InterruptedException e) {
             System.out.println("InterruptedException");
