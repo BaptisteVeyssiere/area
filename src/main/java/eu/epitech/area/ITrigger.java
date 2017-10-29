@@ -11,5 +11,7 @@ public abstract class ITrigger {
         this.name = name;
     }
 
+    public abstract String  getMessage();
+
     public abstract boolean  isTriggered();
 }
