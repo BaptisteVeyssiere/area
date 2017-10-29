@@ -4,6 +4,7 @@ import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
+import twitter4j.conf.ConfigurationBuilder;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -24,10 +25,13 @@ public class TwitterModule extends IModule {
     }
 
     public String   getLink() {
-        twitter = TwitterFactory.getSingleton();
-        twitter.setOAuthConsumer("ZVhu7BPEbh9TaTQDLVUVvC0lO", " dNhGF4xlQWtiCQctF16DWufOpFWF9a1YsFEx0qXkAARaB2x9kw");
+        ConfigurationBuilder cb = new ConfigurationBuilder();
+
+        cb.setOAuthConsumerKey("ZVhu7BPEbh9TaTQDLVUVvC0lO");
+        cb.setOAuthConsumerSecret("dNhGF4xlQWtiCQctF16DWufOpFWF9a1YsFEx0qXkAARaB2x9kw");
+        twitter = new TwitterFactory(cb.build()).getInstance();
         try {
-            requestToken = twitter.getOAuthRequestToken("http://localhost:8080/module");
+            requestToken = twitter.getOAuthRequestToken("http://localhost:8080/modules");
         } catch (twitter4j.TwitterException e) {
             return (null);
         }
