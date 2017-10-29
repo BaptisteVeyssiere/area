@@ -32,4 +32,8 @@ public abstract class IModule {
     }
 
     public abstract String   getLink();
+
+    public abstract String   getParameter();
+
+    public abstract void    setToken(String token);
 }

@@ -37,4 +37,17 @@ public class TwitterModule extends IModule {
         }
         return (requestToken.getAuthenticationURL());
     }
+
+    public String   getParameter() {
+        return (getName() + "/oauth_verifier");
+    }
+
+    public void     setToken(String token) {
+        try {
+            AccessToken at = twitter.getOAuthAccessToken(requestToken, token);
+            twitter.setOAuthAccessToken(at);
+        } catch (twitter4j.TwitterException e) {
+            return ;
+        }
+    }
 }
