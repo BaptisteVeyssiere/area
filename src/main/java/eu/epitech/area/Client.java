@@ -12,6 +12,7 @@ public class Client {
 
     public Client(String username_) {
             username = username_;
+            modules.add(new SlackModule());
     }
 
     public List<IModule> getModules() {

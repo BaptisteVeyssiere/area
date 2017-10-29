@@ -30,4 +30,6 @@ public abstract class IModule {
     public String getName() {
         return name;
     }
+
+    public abstract String   getLink();
 }
