@@ -1,5 +1,7 @@
 package eu.epitech.area;
 
+import java.util.List;
+
 public abstract class ITrigger {
     private String  name;
 
@@ -11,7 +13,9 @@ public abstract class ITrigger {
         this.name = name;
     }
 
-    public abstract String  getMessage();
+    public abstract List<String> getMessage();
 
-    public abstract boolean  isTriggered();
+    public abstract boolean getStatus();
+
+    public abstract void  isTriggered();
 }

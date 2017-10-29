@@ -33,7 +33,7 @@ public class TwitterModule extends IModule {
         try {
             requestToken = twitter.getOAuthRequestToken("http://localhost:8080/modules");
         } catch (twitter4j.TwitterException e) {
-            return (null);
+            return ("nope");
         }
         return (requestToken.getAuthenticationURL());
     }

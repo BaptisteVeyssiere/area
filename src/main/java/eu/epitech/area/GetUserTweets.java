@@ -2,10 +2,12 @@ package eu.epitech.area;
 
 import twitter4j.*;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class GetUserTweets extends ITrigger{
 
+    private boolean status = false;
     private Twitter twitter;
     java.util.Date last_tweet = null;
     String username = null;
@@ -33,20 +35,23 @@ public class GetUserTweets extends ITrigger{
     }
 
     @Override
-    public boolean isTriggered() {
+    public void isTriggered() {
         if (username == null) {
             try {
                 getUserInfo();
             } catch (twitter4j.TwitterException e) {
-                return (false);
+                status = false;
+                return;
             }
         }
 
         boolean trigger = false;
         try {
             List<Status> tweets = getTweets();
-            if (tweets == null)
-                return (false);
+            if (tweets == null) {
+                status = false;
+                return;
+            }
             message = null;
             String url = null;
             for (Status st : tweets) {
@@ -58,13 +63,22 @@ public class GetUserTweets extends ITrigger{
             }
             last_tweet = tweets.get(0).getCreatedAt();
         } catch (twitter4j.TwitterException e) {
-            return (false);
+            status = false;
+            return;
         }
-        return (trigger);
+        status = trigger;
     }
 
     @Override
-    public String getMessage() {
-        return message;
+    public List<String> getMessage() {
+        List<String> list = new LinkedList<>();
+
+        list.add(message);
+        return (list);
+    }
+
+    @Override
+    public boolean getStatus() {
+        return (status);
     }
 }
