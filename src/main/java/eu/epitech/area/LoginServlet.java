@@ -31,40 +31,6 @@ public class LoginServlet extends HttpServlet {
             String email = payLoad.getEmail();
             System.out.println("User name: " + name);
             System.out.println("User email: " + email);
-            //creating bean
-            UsersBean users = new UsersBean();
-            UserBean ub = new UserBean();
-            ub.setUserToken(idToken);
-            ub.createPair("twitter", "AZEJO1azlejalzekjaZOojZOJ8_èyZJK");
-            ub.createPair("slack", "AZEtesttesstteeesstjalzekeaaoziekaoèyZJK");
-            users.addUser(ub);
-            UserBean ub2 = new UserBean();
-            ub2.setUserToken("123456789012345678901234567890123456789012345678901234567890123456789");
-            ub2.createPair("twitter", "AZEJO1azlejalzekjaZOojZOJ8_èyZJK");
-            ub2.createPair("slack", "AZEtesttesstteeesstjalzekeaaoziekaoèyZJK");
-            ub2.createPair("Facebook", "lelelelelelelel");
-            users.addUser(ub2);
-            //xml encoder
-            XmlEncodeToFile xml2 = new XmlEncodeToFile();
-            xml2.EncodeUsersBean(users); // cree mon xml
-            //fin xml encoder
-
-            UsersBean usersget = new UsersBean();
-            XMLDecodeFromFile xml3 = new XMLDecodeFromFile();
-            usersget = xml3.DecodeUsersBean(usersget); // déserialise
-            //fin du décoder
-            //début de l'affichage
-
-            Iterator<UserBean> it = usersget.getUsers().iterator();
-            while (it.hasNext()) {
-                UserBean tmp = it.next();
-                System.out.println(tmp.getUserToken());
-                for(Map.Entry<String, String> entry : tmp.getPair().entrySet()){
-                    System.out.printf("Key : %s and Value: %s %n", entry.getKey(), entry.getValue());
-                }
-            }
-            //fin de l'affichage
-
             HttpSession session = req.getSession(true);
             session.setAttribute("userName", name);
             Core    core = (Core)req.getServletContext().getAttribute("core");
