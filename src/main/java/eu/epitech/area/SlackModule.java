@@ -15,6 +15,6 @@ public class SlackModule extends IModule {
     }
 
     public String   getLink() {
-        return ("lol");
+        return ("");
     }
 }
