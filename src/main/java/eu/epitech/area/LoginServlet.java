@@ -35,13 +35,15 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("userName", name);
             Core    core = (Core)req.getServletContext().getAttribute("core");
             Client  tmp = new Client(email);
+            boolean exist = false;
             for (Client client : core.getClients()) {
                 if (client.getUsername().equals(email)) {
                     tmp = client;
+                    exist = true;
                 }
             }
             req.getSession().setAttribute("client", tmp);
-            if (!tmp.getUsername().equals(email)) {
+            if (!exist) {
                 core.addClient(tmp);
             }
             req.getServletContext().setAttribute("core", core);

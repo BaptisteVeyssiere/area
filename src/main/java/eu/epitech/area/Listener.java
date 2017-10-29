@@ -18,7 +18,7 @@ public class Listener implements ServletContextListener {
                         for (String[] link : client.getLinks()) {
                             for (ITrigger trigger : client.getModuleByName(link[0]).getTriggers()) {
                                 if (trigger.getName().equals(link[1])) {
-                                    status =  trigger.isTriggered();
+                                    trigger.isTriggered();
                                     System.out.println("Trigger");
                                     for (IReaction reaction : client.getModuleByName(link[2]).getReactions()) {
                                         System.out.println("Reaction execution");
