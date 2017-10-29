@@ -39,7 +39,7 @@ public class TwitterModule extends IModule {
     }
 
     public String   getParameter() {
-        return (getName() + "/oauth_verifier");
+        return ("oauth_verifier");
     }
 
     public void     setToken(String token) {

@@ -36,7 +36,7 @@ public class SlackModule extends IModule {
 
     public String   getParameter()
     {
-        return (getName() + "/code");
+        return ("code");
     }
 
     public String   getLink() {
