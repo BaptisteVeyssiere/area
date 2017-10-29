@@ -81,4 +81,8 @@ public class GetUserTweets extends ITrigger{
     public boolean getStatus() {
         return (status);
     }
+
+    public void setAccess(Object o) {
+        twitter = (Twitter)o;
+    }
 }

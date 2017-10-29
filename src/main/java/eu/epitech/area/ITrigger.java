@@ -18,4 +18,7 @@ public abstract class ITrigger {
     public abstract boolean getStatus();
 
     public abstract void  isTriggered();
+
+    public abstract void setAccess(Object o);
+
 }

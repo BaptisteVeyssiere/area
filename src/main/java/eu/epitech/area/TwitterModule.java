@@ -46,7 +46,11 @@ public class TwitterModule extends IModule {
         try {
             AccessToken at = twitter.getOAuthAccessToken(requestToken, token);
             twitter.setOAuthAccessToken(at);
+            for (ITrigger trig : getTriggers()) {
+                trig.setAccess(twitter);
+            }
         } catch (twitter4j.TwitterException e) {
+            System.out.println("Failed to authenticate twitter user");
             return ;
         }
     }
