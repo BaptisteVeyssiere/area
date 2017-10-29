@@ -18,7 +18,11 @@ public class ModuleServlet extends HttpServlet {
             if (value != null) {
                 System.out.println(module.getName());
                 System.out.println(value);
-                module.setToken(value);
+                IModule cmodule = module;
+                cmodule.setToken(value);
+                client.addModule(cmodule);
+                request.getServletContext().setAttribute("core", core);
+                request.getSession().setAttribute("client", client);
                 this.getServletContext().getRequestDispatcher("/WEB-INF/modules.jsp").forward(request, response);
                 return;
             }

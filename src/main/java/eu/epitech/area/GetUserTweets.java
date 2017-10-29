@@ -48,6 +48,7 @@ public class GetUserTweets extends ITrigger{
         boolean trigger = false;
         try {
             List<Status> tweets = getTweets();
+            System.out.println(tweets.size());
             if (tweets == null) {
                 status = false;
                 return;
