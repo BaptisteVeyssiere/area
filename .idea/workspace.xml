@@ -8,27 +8,16 @@
   <component name="ChangeListManager">
     <list default="true" id="68e38c11-f5c5-4fdb-b619-ec66d6e6f702" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Client.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Core.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Core.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/ITrigger.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/ITrigger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Listener$1.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Listener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Listener.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/Listener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/SendSlackMessage.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/SendSlackMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/IModule.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/IModule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/SlackModule.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/SlackModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Java_area_2017_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Java_area_2017_Web_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/TwitterModule.class" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/classes/eu/epitech/area/TwitterModule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java_area_2017.iml" afterPath="$PROJECT_DIR$/Java_area_2017.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/factory.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/factory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/modules.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Java_area_2017_Web_exploded/WEB-INF/modules.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Listener.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/Listener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/SendSlackMessage.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/SendSlackMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/factory.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/factory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java" afterPath="$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/modules.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/modules.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,53 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SendSlackMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/SendSlackMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#213#222#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,13 +69,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Listener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Listener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="23" column="81" lean-forward="false" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modules.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/modules.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#190#199#0" expanded="true" />
+                <element signature="e#251#259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +118,8 @@
       <file leaf-file-name="IModule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="414">
+              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding>
                 <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
@@ -143,19 +131,26 @@
       <file leaf-file-name="SlackModule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FactoryServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/FactoryServlet.java">
+      <file leaf-file-name="TwitterModule.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,13 +187,15 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/SendSlackMessage.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/LinkServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/Listener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modules.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java" />
       </list>
     </option>
   </component>
@@ -334,12 +331,6 @@
               <item name="Java_area_2017" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="area" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_area_2017" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -538,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4584000" />
+    <option name="totallyTimeSpent" value="7899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -752,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modules.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -782,6 +765,8 @@
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,34 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#190#199#0" expanded="true" />
-            <element signature="e#251#259#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -887,14 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/SendSlackMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -903,14 +852,6 @@
             <element signature="e#205#206#0" expanded="true" />
             <element signature="e#228#229#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/factory.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,44 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#213#222#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/LinkServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -984,6 +887,93 @@
           <caret line="23" column="81" lean-forward="false" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/factory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#190#199#0" expanded="true" />
+            <element signature="e#251#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#213#222#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modules.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/IModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/SlackModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/epitech/area/TwitterModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
           </folding>
         </state>
       </provider>

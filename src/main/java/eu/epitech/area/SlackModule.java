@@ -13,4 +13,8 @@ public class SlackModule extends IModule {
         setReactions(reactions);
         setTriggers(triggers);
     }
+
+    public String   getLink() {
+        return ("lol");
+    }
 }
