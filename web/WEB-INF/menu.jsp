@@ -9,5 +9,5 @@
 <ul class="menu">
     <li class="menu"><a href="home">Accueil</a></li>
     <li class="menu"><a href="modules">Modules</a></li>
-    <li class="menu"><a href="factory">Fabrique à Area</a></li>
+    <li class="menu"><a href="factory">Fabrique</a></li>
 </ul>
