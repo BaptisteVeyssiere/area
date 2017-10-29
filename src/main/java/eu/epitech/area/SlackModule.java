@@ -9,7 +9,7 @@ public class SlackModule extends IModule {
         List<IReaction>  reactions = new LinkedList<IReaction>();
 
         setName("Slack");
-        triggers.add(new SendSlackMessage());
+        reactions.add(new SendSlackMessage());
         setReactions(reactions);
         setTriggers(triggers);
     }

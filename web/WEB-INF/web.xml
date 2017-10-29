@@ -24,6 +24,11 @@
         <servlet-class>eu.epitech.area.ModuleServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>LinkMaker</servlet-name>
+        <servlet-class>eu.epitech.area.LinkServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>index</servlet-name>
         <url-pattern></url-pattern>
@@ -37,6 +42,11 @@
     <servlet-mapping>
         <servlet-name>factory</servlet-name>
         <url-pattern>/factory</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LinkMaker</servlet-name>
+        <url-pattern>/linkMaking</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

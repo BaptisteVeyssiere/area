@@ -24,11 +24,21 @@ public class LoginServlet extends HttpServlet {
             GoogleIdToken.Payload payLoad = IdTokenVerifierAndParser.getPayload(idToken);
             String name = (String) payLoad.get("name");
             String email = payLoad.getEmail();
-            System.out.println("User name: " + name);
-            System.out.println("User email: " + email);
 
             HttpSession session = req.getSession(true);
             session.setAttribute("userName", name);
+            Core    core = (Core)req.getServletContext().getAttribute("core");
+            Client  tmp = new Client(email);
+            for (Client client : core.getClients()) {
+                if (client.getUsername().equals(email)) {
+                    tmp = client;
+                }
+            }
+            req.getSession().setAttribute("client", tmp);
+            if (!tmp.getUsername().equals(email)) {
+                core.addClient(tmp);
+            }
+            req.getServletContext().setAttribute("core", core);
             req.getServletContext()
                     .getRequestDispatcher("/WEB-INF/home.jsp").forward(req, resp);
 

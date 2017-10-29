@@ -13,6 +13,7 @@ public class Core {
     public Core(ServletContextEvent contextEvent) {
         context = contextEvent;
         modules.add(new SlackModule());
+        modules.add(new TwitterModule());
     }
 
     public void setModules(List<IModule> modules) {
@@ -21,5 +22,17 @@ public class Core {
 
     public List<IModule> getModules() {
         return modules;
+    }
+
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public void addClient(Client client) {
+        clients.add(client);
     }
 }

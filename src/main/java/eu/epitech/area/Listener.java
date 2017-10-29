@@ -11,7 +11,22 @@ public class Listener implements ServletContextListener {
         servletContextEvent.getServletContext().setAttribute("running", true);
         Thread thread = new Thread("Backloop Thread") {
             public void run() {
+                boolean status = false;
+
                 while ((Boolean)servletContextEvent.getServletContext().getAttribute("running")) {
+                    for (Client client : ((Core)servletContextEvent.getServletContext().getAttribute("core")).getClients()) {
+                        for (String[] link : client.getLinks()) {
+                            for (ITrigger trigger : client.getModuleByName(link[0]).getTriggers()) {
+                                if (trigger.getName().equals(link[1])) {
+                                    status =  trigger.isTriggered();
+                                    System.out.println("Trigger");
+                                    for (IReaction reaction : client.getModuleByName(link[2]).getReactions()) {
+                                        System.out.println("Reaction execution");
+                                    }
+                                }
+                            }
+                        }
+                    }
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {

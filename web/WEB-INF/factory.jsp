@@ -13,4 +13,26 @@
 </head>
 <c:import url="header.jsp" />
 <c:import url="menu.jsp" />
+<form method="get" action="linkMaking" >
+    <br>
+    Action : <select name="action">
+        <c:forEach items="${sessionScope.client.getModules()}" var="module" >
+            <c:forEach items="${module.getTriggers()}" var="action" >
+                <c:out value="<option value=\"${module.getName()}-${action.getName()}\">${module.getName()}-${action.getName()}</option>" escapeXml="False" />
+            </c:forEach>
+        </c:forEach>
+    </select>
+    <br>
+    <br>
+    Reaction : <select name="reaction">
+        <c:forEach items="${sessionScope.client.getModules()}" var="module" >
+            <c:forEach items="${module.getReactions()}" var="reaction" >
+                <c:out value="<option value=\"${module.getName()}-${reaction.getName()}\">${module.getName()}-${reaction.getName()}</option>" escapeXml="False" />
+            </c:forEach>
+        </c:forEach>
+    </select>
+    <br>
+    <br>
+    <input type="submit">
+</form>
 </html>
