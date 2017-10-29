@@ -1,14 +1,19 @@
 package eu.epitech.area;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Client {
+public class Client implements Serializable {
 
     private String   username;
     private List<IModule>   modules = new LinkedList<IModule>();
     private List<String[]>  links = new LinkedList<>();
+
+    public Client()
+    {
+    }
 
     public Client(String username_) {
             username = username_;

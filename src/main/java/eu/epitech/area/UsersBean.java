@@ -1,24 +1,22 @@
 package eu.epitech.area;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
 public class UsersBean {
-    ArrayList<UserBean> users = new ArrayList<UserBean>();
+    LinkedList<Client> users = new LinkedList<Client>();
 
     public UsersBean () {
     }
 
-    public void addUser(UserBean ub)
-    {
-     users.add(ub);
+    public void addUser(Client client) {
+     users.add(client);
     }
 
-    public ArrayList<UserBean> getUsers() {
+    public LinkedList<Client> getUsers() {
         return users;
     }
 
-    public void setUsers(ArrayList<UserBean> users) {
-        this.users = users;
+    public void setUsers(LinkedList<Client> musers) {
+        this.users = musers;
     }
 }

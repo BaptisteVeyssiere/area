@@ -2,11 +2,21 @@ package eu.epitech.area;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Listener implements ServletContextListener {
 
     public void contextInitialized(final ServletContextEvent servletContextEvent) {
+        try {
+            UsersBean users = new UsersBean();
+            XMLDecodeFromFile decoder = new XMLDecodeFromFile();
+            users = decoder.DecodeUsersBean(users);}
+        catch (Exception e)
+        {
+            System.err.println("Error: " + e);
+        }
         servletContextEvent.getServletContext().setAttribute("core", new Core(servletContextEvent));
         servletContextEvent.getServletContext().setAttribute("running", true);
         Thread thread = new Thread("Backloop Thread") {
@@ -41,10 +51,20 @@ public class Listener implements ServletContextListener {
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
         servletContextEvent.getServletContext().setAttribute("running", false);
+        Core    core = (Core) servletContextEvent.getServletContext().getAttribute("core");
+        LinkedList<Client> clients = (LinkedList<Client>) core.getClients();
+        System.out.println(clients.get(0).getUsername());
         try {
             Thread.sleep(2000);
+            XmlEncodeToFile encoder = new XmlEncodeToFile();
+            UsersBean users = new UsersBean();
+            users.setUsers(clients);
+            System.out.println("après la set :  " + users.getUsers().get(0).getUsername());
+            encoder.EncodeUsersBean(users);
         } catch (InterruptedException e) {
             System.out.println("InterruptedException");
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
         }
     }
 }
